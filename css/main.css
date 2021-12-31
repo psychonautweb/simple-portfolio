@@ -1,0 +1,139 @@
+/* variables */
+:root{
+    --main-color: #387be0;
+    --blue:#0000ff;
+    --blue-dark:#18293c;
+    --orange:#ffa500;
+    --orange-light:#f0be61;
+    --green-yellow:#cddc39;
+    --pink-light:#39a7e7;
+    --cyan-light:#be48f5;
+    --white:#ffffff;
+    --white-alpha-40:rgba(255,255,255,0.40);
+    --white-alpha-25:rgba(255,255,255,0.25);
+    --backdrop-filter-blur:blur(5px);
+
+    --clr-neon: #ffffff;
+    --clr-bg: hsl(323 21% 16%);
+}
+
+/** global settings **/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+body {
+    font-family: 'Fira Code', monospace;
+}
+
+section {
+    height: 31rem;
+    background-color: var(--white);
+    border: 1px solid var(--blue-dark);
+}
+
+.hero {
+    background-color: var(--blue-dark);
+    height: 100vh;
+    color: var(--white);
+    font-size: 2.5rem;
+}
+
+footer {
+    height: 500px;
+
+    background-color: var(--blue-dark);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    width: 31.25rem;
+    justify-content: space-around;
+    font-size: 1.8rem;
+}
+
+li {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 90px;
+}
+
+.hero-area {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    margin-left: 2.5rem;
+    margin-bottom: 12.5rem;
+}
+
+p { 
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+/* Button */
+.btn {
+    width: 12.5rem;
+    height: 3.1rem;
+    border-radius: 2.5rem;
+    background-color: var(--orange);
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 300;
+    padding-top: 0.3rem;
+    margin-top: 1.3rem;
+}
+
+.btn:hover {
+    background-color: var(--orange-light);
+}
+
+.btn:active {
+    background-color: var(--white-alpha-25);
+    color: var(--white);
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+    bottom: 8rem;
+    margin-right: 1rem;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    height: 5rem;
+    margin: 1.8rem;
+}
+
+/*About */
+
+.about-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+h2 {
+    font-size: 3rem;
+}
