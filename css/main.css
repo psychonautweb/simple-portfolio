@@ -30,9 +30,7 @@ body {
 }
 
 section {
-    height: 31rem;
-    background-color: var(--white);
-    border: 1px solid var(--blue-dark);
+    background-color: var(--white);   /*  do i need this please review later */
 }
 
 .hero {
@@ -43,9 +41,10 @@ section {
 }
 
 footer {
-    height: 500px;
-
+    padding: 5rem;
     background-color: var(--blue-dark);
+    color: white;
+    text-align: center;
 }
 
 nav {
@@ -61,12 +60,20 @@ ul {
     font-size: 1.8rem;
 }
 
+ul.show {
+    display: block;
+}
+
 li {
     text-decoration: none;
 }
 
 h1 {
     font-size: 90px;
+}
+
+h2 {
+    font-size: 3rem;
 }
 
 .hero-area {
@@ -83,6 +90,11 @@ h1 {
 
 p { 
     font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.subtext {
+    font-size: 15px;
     font-weight: 300;
 }
 
@@ -127,13 +139,105 @@ p {
     margin: 1.8rem;
 }
 
-/*About */
+/*section*/
 
 .about-section {
     display: flex;
     justify-content: space-around;
+    padding: 5rem;
 }
 
-h2 {
-    font-size: 3rem;
+.sub-section-alternative {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem;
 }
+
+/* *****------------------   */
+
+.profile-img {
+    width: 18.7rem;
+}
+
+.profile-img-container {
+    display: flex;
+    align-items: center;
+}
+
+.project-item {
+    height: 300px;
+    width: 200px;
+    box-shadow: 5px 5px 20px rgb(209, 208, 208);
+    margin: 10px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-image {
+    margin-top: 25px;
+    width: 11.8rem;
+    border-radius: 50px;
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: rgb(236, 105, 17);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger:focus {
+    outline: 0;
+}
+
+@media screen and (max-width:1000px) {
+    .project-container {
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+
+    ul {
+        display: none;
+        background-color: #2b2c3B;
+        margin: 0px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #2b2c3B;
+
+    }
+
+    .logo {
+        display: none;
+    }
+    
+}
+

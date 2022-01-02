@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/app.js" defer></script>
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="js/app.js" defer></script>
     <title>Dubravko Cajic - Virtual Portfolio</title>
 </head>
 <body>
@@ -17,18 +17,21 @@
     <header class="hero">
         <nav>
             <img src="img/logo.png" class="logo" alt="Logo">
-            <ul>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Contact</li>
+            <ul id="nav-bar-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>            
             </ul>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
         <div class="hero-area">
             <div class="hero-text">
                 <p>Hello World, I'm [</p>
                 <h1>'Dubravko'</h1>
                 <p>] Web Developer</p>
-                <div class="btn">About</div>
+                <div class="btn"><a href="#about">About</a></div>
             </div>
             <div class="social-links">
                 <a href="https://www.instagram.com/dubravko.cajic/" target="_blank" class="fab fa-instagram"></a>
@@ -39,22 +42,45 @@
     </header>
     <!-- Header Hero section End -->
     <!-- About Section -->
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="information">
             <h2>About</h2>
             <p>Hello I'm ...</p>
         </div>
-        <div class="profile-img"></div>
+        <div class="profile-img-container">
+            <img src="img/profile-img.png" alt="profile-img" class="profile-img">
+        </div>
     </section>
     <!-- About Section End-->
-    <section>
-        
+    <!-- Projects Section -->
+    <section class="sub-section-alternative" id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-item">
+                <img class="project-image" src="img/1.png" alt="project one">
+                <h3>Project one</h3>
+                <p class="subtext">This is my about text about project</p>
+                <hr/>
+                <p class="subtext"><a class="project-link" href="https://www.google.com">View project</a></p>
+            </div>
+            <div class="project-item">
+                <img class="project-image" src="img/2.jpg" alt="project one">
+                <h3>Project two</h3>
+                <p class="subtext">This is my about text about project</p>
+                <hr/>
+                <p class="subtext"><a class="project-link" href="https://www.google.com">View project</a></p>
+            </div>         
+        </div>
     </section>
+    <!-- Projects Section End-->
+    <!-- Contact/Footer Section -->
+    <footer id="contact">
 
-    <footer>
+        <h2>Contact me</h2>
+        <p>email ... add contact form here later!</p>
 
     </footer>
-
+    <!-- Contact/Footer Section End -->
 
     
 </body>
